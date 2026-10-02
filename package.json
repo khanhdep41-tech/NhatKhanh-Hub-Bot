@@ -1,0 +1,13 @@
+{
+  "name": "nhatkhanh-hub-bot",
+  "version": "1.0.0",
+  "private": true,
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "pg": "^8.16.3"
+  }
+}
