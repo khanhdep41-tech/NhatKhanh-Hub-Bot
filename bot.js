@@ -16,7 +16,19 @@ const {
 
 const { Pool } = require("pg");
 const crypto = require("crypto");
+const http = require("http");
 
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+    res.writeHead(200, {
+        "Content-Type": "text/plain; charset=utf-8"
+    });
+
+    res.end("NhatKhanh Hub Bot is online.");
+}).listen(PORT, "0.0.0.0", () => {
+    console.log(`[BOT] HTTP server listening on port ${PORT}`);
+});
 // ======================================================
 // CONFIG
 // ======================================================
